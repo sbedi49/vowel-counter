@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel Counter App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="header-1">Vowel Counter App</h1>
+        <p class="text">Enter a sentence or a word</p>
+        <input onfocus="document.getElementById('span').innerText=0;this.value=''" type="text" class="search" id="searchbar">
+        <button onclick="getValue()" class="btn">Click Here</button>
+        <ul class="list" id="list">
+           <li>Vowel Count: <span id="span"></span></li>
+        </ul>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
